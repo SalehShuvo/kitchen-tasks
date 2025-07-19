@@ -6,3 +6,4 @@ cd load_scene
 ```
 python load_scene.py
 ```
+load_scene directory contains several data folders select one for scene and commands path in the load_scene.py script
