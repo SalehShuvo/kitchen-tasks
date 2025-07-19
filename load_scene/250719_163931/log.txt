@@ -1,0 +1,82 @@
+Namespace(data=Namespace(cameras={'front': [[6.84, 2.9, 1.3], [0.5, 0.5, -0.5, -0.5]], 'top': [[2, 4, 3], [0, 4, 1]], 'zoomin1': ['minifridge', [2, 0, 2]]}, fx=800, images={'save_rgb': True, 'save_depth': False}, out_dir='/home/shuvo/Tamp/test-env/pybullet_planning/../outputs/test_pr2_kitchen_full/', resolution=[1280, 720], save_commands=True, save_failed_plans=True, save_log=True), n_data=1, parallel=False, planner=Namespace(dataset=False, diverse=False, domain_pddl='/home/shuvo/Tamp/test-env/pybullet_planning/pddl_domains/pr2_domain_pigi.pddl', downward_time=1, stream_pddl='/home/shuvo/Tamp/test-env/pybullet_planning/pddl_domains/pr2_stream_pigi.pddl', timeout=300, visualize=False), robot=Namespace(builder_kwargs={'custom_limits': [[0, -4, -0.5], [3, 8, 3]], 'initial_xy': [2, 3]}, builder_name='build_robot_from_args', robot_name='pr2'), seed=None, sim=Namespace(camera=True, drive=True, lock=True, monitoring=False, segment=False, simulate=False, skip_prompt=False, time_step=0.02, viewer=True), streams={'debug': False, 'cfree': False, 'teleport': False, 'movable_collisions': True, 'base_collisions': True, 'top_grasp_tolerance': 0.8, 'ir_max_attempts': 15, 'use_all_grasps': False}, verbose=False, world=Namespace(builder_kwargs={'movable_categories': ['edible'], 'goal_predicates': ['openedjoint', 'holding', 'on', 'in'], 'verbose': False}, builder_name='test_kitchen_full'))
+--------------------------------------------------------------------------------
+PART I: world objects | movable(1) | obstacles(31) = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 32, 33, 34]
+--------------------------------------------------------------------------------
+0      |  PR2Robot: pr2robot      |  categories: ['pr2robot']    |  Pose: (0.0, 0.0, 0.0, 0.0, -0.0, 0.0)
+20      |  Supporter: counter#1      |  categories: ['supporter'] | asset: box    |  Pose: (0.311, 1.216, 1.026, 0.0, -0.0, 0.0)
+31      |  Object: veggiezucchini      |  categories: ['edible', 'movable'] | asset: Food/VeggieZucchini    |  Pose: (0.375, 1.635, 1.079, 0.0, -0.0, 2.511)
+----------------
+1      |  Floor: floor#1      |  categories: ['floor'] | asset: box    |  Pose: (1.5, 2.0, -0.002, 0.0, -0.0, 0.0)     (excluded from planning)
+2      |  Object: sinkbase      |  categories: ['object'] | asset: SinkBase/44781    |  Pose: (0.298, 3.853, 0.543, 0.0, -0.0, 3.142)     (excluded from planning)
+3      |  Object: sink#1      |  categories: ['object'] | asset: Sink/100685    |  Pose: (0.515, 3.854, 1.09, 0.0, -0.0, 3.142)     (excluded from planning)
+(3, None, 1)      |  Surface: sink#1::sink_bottom      |  categories: ['surface'] | asset: Sink/100685    |  Pose: (0.515, 3.854, 1.09, 1.571, -0.0, -1.571)     (excluded from planning)
+4      |  Object: faucet      |  categories: ['object'] | asset: Faucet/104    |  Pose: (0.081, 3.853, 1.203, 0.0, -0.0, 3.142)     (excluded from planning)
+5      |  Supporter: sink_counter_left      |  categories: ['supporter'] | asset: box    |  Pose: (0.311, 3.496, 1.026, 0.0, -0.0, 0.0)     (excluded from planning)
+7      |  Object: sink_counter_front      |  categories: ['filler'] | asset: box    |  Pose: (0.57, 3.853, 1.026, 0.0, -0.0, 0.0)     (excluded from planning)
+8      |  Object: sink_counter_back      |  categories: ['filler'] | asset: box    |  Pose: (0.063, 3.853, 1.026, 0.0, -0.0, 0.0)     (excluded from planning)
+9      |  Object: cabinetlower      |  categories: ['cabinetlower'] | asset: CabinetLower/35059    |  Pose: (0.211, 4.711, 0.472, 0.0, -0.0, 3.142)     (excluded from planning)
+10      |  Object: cabinettall      |  categories: ['cabinettall'] | asset: CabinetTall/46236    |  Pose: (0.273, 5.288, 0.99, 0.0, -0.0, 3.142)     (excluded from planning)
+11      |  Object: minifridge      |  categories: ['minifridge'] | asset: MiniFridge/11231    |  Pose: (0.426, 6.035, 1.023, 0.0, -0.0, 3.142)     (excluded from planning)
+(11, 1)      |  Door: minifridge::joint_1      |  categories: ['door'] | asset: MiniFridge/11231    |  Handle: handle_1    |  JointLimit: (0.0, 3.142)    |  Pose: 0.0     (excluded from planning)
+(11, 3)      |  Door: minifridge::joint_2      |  categories: ['door'] | asset: MiniFridge/11231    |  Handle: handle_2    |  JointLimit: (-0.0, 3.142)    |  Pose: 1.317     (excluded from planning)
+(11, None, 0)      |  Space: minifridge::storage      |  categories: ['space'] | asset: MiniFridge/11231    |  Pose: (0.426, 6.035, 1.023, 1.571, -0.0, 1.571)     (excluded from planning)
+12      |  Object: minifridgebase      |  categories: ['minifridgebase'] | asset: MiniFridgeBase/46166    |  Pose: (0.387, 6.038, 0.206, 0.0, -0.0, 3.142)     (excluded from planning)
+13      |  Object: cabinettall#1      |  categories: ['cabinettall'] | asset: CabinetTall/45594    |  Pose: (0.203, 6.921, 0.972, 0.0, -0.0, 3.142)     (excluded from planning)
+14      |  Object: ovencounter      |  categories: ['ovencounter'] | asset: OvenCounter/101773    |  Pose: (0.134, 2.872, 0.515, 0.0, -0.0, 3.142)     (excluded from planning)
+15      |  Object: dishwasherbox      |  categories: ['dishwasherbox'] | asset: DishwasherBox/12428    |  Pose: (0.25, 1.995, 0.532, 0.0, -0.0, 3.142)     (excluded from planning)
+16      |  Object: cabinetlower#1      |  categories: ['cabinetlower'] | asset: CabinetLower/45213    |  Pose: (0.182, 1.306, 0.545, 0.0, -0.0, 3.142)     (excluded from planning)
+17      |  Object: cabinetlower#2      |  categories: ['cabinetlower'] | asset: CabinetLower/41004    |  Pose: (0.178, 0.823, 0.539, 0.0, -0.0, 3.142)     (excluded from planning)
+18      |  Object: cabinetlower#3      |  categories: ['cabinetlower'] | asset: CabinetLower/35059    |  Pose: (0.211, 0.339, 0.472, 0.0, -0.0, 3.142)     (excluded from planning)
+19      |  Supporter: wall      |  categories: ['supporter'] | asset: box    |  Pose: (-0.341, 3.681, 1.509, 0.0, -0.0, 0.0)     (excluded from planning)
+6      |  Supporter: sink_counter_right      |  categories: ['supporter'] | asset: box    |  Pose: (0.311, 4.548, 1.026, 0.0, -0.0, 0.0)     (excluded from planning)
+21      |  Object: counter_back#1      |  categories: ['filler'] | asset: box    |  Pose: (-0.139, 1.216, 1.026, 0.0, -0.0, 0.0)     (excluded from planning)
+22      |  Object: counter_back#2      |  categories: ['filler'] | asset: box    |  Pose: (-0.139, 4.191, 1.026, 0.0, -0.0, 0.0)     (excluded from planning)
+23      |  Object: cabinettop      |  categories: ['cabinettop'] | asset: CabinetTop/00003    |  Pose: (0.519, 4.481, 2.254, 0.0, -0.0, 3.142)     (excluded from planning)
+(23, 2)      |  Door: cabinettop::baker_joint      |  categories: ['door'] | asset: CabinetTop/00003    |  Handle: baker_handle    |  JointLimit: (0.0, 1.57)    |  Pose: 0.009     (excluded from planning)
+(23, 6)      |  Door: cabinettop::chewie_door_right_joint      |  categories: ['door'] | asset: CabinetTop/00003    |  Handle: chewie_door_right_handle    |  JointLimit: (0.0, 1.57)    |  Pose: 0.138     (excluded from planning)
+(23, 10)      |  Door: cabinettop::chewie_door_left_joint      |  categories: ['door'] | asset: CabinetTop/00003    |  Handle: chewie_door_left_handle    |  JointLimit: (-1.57, 0.0)    |  Pose: 0.0     (excluded from planning)
+(23, None, 0)      |  Space: cabinettop::storage      |  categories: ['space'] | asset: CabinetTop/00003    |  Pose: (0.839, 4.481, 2.254, 0.0, 0.0, -0.0)     (excluded from planning)
+24      |  Object: cabinettop_filler      |  categories: ['filler'] | asset: box    |  Pose: (0.091, 3.909, 2.633, 0.0, -0.0, 0.0)     (excluded from planning)
+25      |  Supporter: shelf_lower      |  categories: ['supporter'] | asset: box    |  Pose: (0.159, 1.216, 2.276, 0.0, -0.0, 0.0)     (excluded from planning)
+26      |  Object: microwave#1      |  categories: ['microwave'] | asset: Microwave/7310    |  Pose: (0.33, 4.463, 1.221, 0.0, -0.0, 3.142)     (excluded from planning)
+27      |  Object: braiserbody#1      |  categories: ['braiserbody'] | asset: BraiserBody/100021    |  Pose: (0.445, 2.726, 1.201, 0.0, -0.0, 3.142)     (excluded from planning)
+(27, None, 1)      |  Surface: braiserbody#1::braiser_bottom      |  categories: ['surface'] | asset: BraiserBody/100021    |  Pose: (0.445, 2.726, 1.201, 1.571, -0.0, 1.571)     (excluded from planning)
+28      |  Object: braiserlid      |  categories: ['movable'] | asset: BraiserLid/100021    |  Pose: (0.445, 2.726, 1.201, 0.0, -0.0, -2.356)     (excluded from planning)
+29      |  Object: veggieartichoke      |  categories: ['edible'] | asset: Food/VeggieArtichoke    |  Pose: (0.505, 0.989, 1.103, 0.0, -0.0, 1.82)     (excluded from planning)
+32      |  Object: bottle#1      |  categories: ['bottle'] | asset: Bottle/3558    |  Pose: (0.401, 0.584, 1.162, 0.0, -0.0, 0.241)     (excluded from planning)
+33      |  Object: medicine#1      |  categories: ['medicine'] | asset: Medicine/4514    |  Pose: (0.419, 1.216, 2.35, 0.0, -0.0, 0.749)     (excluded from planning)
+34      |  Object: medicine#2      |  categories: ['medicine'] | asset: Medicine/5861    |  Pose: (0.537, 4.381, 1.454, 0.0, -0.0, 2.206)     (excluded from planning)
+----------------
+Facts extracted from observation (24)
+  = [2] : ['=', ('pickcost',), 1], ['=', ('placecost',), 1]
+  aconf [2] : ['aconf', 'left', aq56=(0.677, -0.343, 1.2, -1.467, 1.242, -1.954, 2.223)], ['aconf', 'right', aq152=(-2.135, 1.296, -3.75, -0.15, -10000.0, -0.1, -10000.0)]
+  arm [1] : ['arm', 'left']
+  ataconf [2] : ['ataconf', 'left', aq56=(0.677, -0.343, 1.2, -1.467, 1.242, -1.954, 2.223)], ['ataconf', 'right', aq152=(-2.135, 1.296, -3.75, -0.15, -10000.0, -0.1, -10000.0)]
+  atbconf [1] : ['atbconf', q8=(2.0, 3.0, 0.2, 3.142)]
+  atpose [1] : ['atpose', '31|veggiezucchini', p169=(0.375, 1.635, 1.079, 0.0, -0.0, 2.511)]
+  bconf [1] : ['bconf', q8=(2.0, 3.0, 0.2, 3.142)]
+  cangrasphandle [1] : ['cangrasphandle']
+  canmove [1] : ['canmove']
+  canmovebase [1] : ['canmovebase']
+  canpick [1] : ['canpick']
+  canpull [1] : ['canpull', 'left']
+  controllable [1] : ['controllable', 'left']
+  edible [1] : ['edible', '31|veggiezucchini']
+  graspable [1] : ['graspable', '31|veggiezucchini']
+  handempty [1] : ['handempty', 'left']
+  oftype [1] : ['oftype', '31|veggiezucchini', '@edible']
+  pose [1] : ['pose', '31|veggiezucchini', p169=(0.375, 1.635, 1.079, 0.0, -0.0, 2.511)]
+  stackable [1] : ['stackable', '31|veggiezucchini', '20|counter#1']
+  staticlink [1] : ['staticlink', '20|counter#1']
+  supported [1] : ['supported', '31|veggiezucchini', p169=(0.375, 1.635, 1.079, 0.0, -0.0, 2.511), '20|counter#1']
+----------------
+Goal (1): (and
+   ('Holding', 'left', '31|veggiezucchini'),
+)
+
+--------------------------------------------------
+Robot: pr2robot | Objects: [20, 31]
+Movable: [pr2robot, 31] | Fixed: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 32, 33, 34] | Floor: [1]
+--------------------------------------------------
+
+Optimistic streams: Counter({'plan-base-motion': 9, 'inverse-reachability': 2, 'inverse-kinematics': 2, 'sample-grasp': 1, 'sample-pose': 1})

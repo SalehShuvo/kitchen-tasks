@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- tmp sdf file generated from LISDF -->
+<sdf version="1.9">
+  <world name="tmp_world">
+
+<model name="floor#1">
+  <static>True</static>
+  <pose>1.5 2.0 -0.0020000000949949026 0.0 -0.0 0.0</pose>
+  <link name="box">
+    
+    <inertial>
+      <mass>0</mass>
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <inertia>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+      </inertia>
+    </inertial>
+    <collision name="box_collision">>
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <geometry>
+        <box>
+          <size>3.0 12.0 0.0010000000474974513</size>
+        </box>
+      </geometry>
+      
+    </collision>
+    <visual name="box_visual">
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <geometry>
+        <box>
+          <size>3.0 12.0 0.0010000000474974513</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>0.8240000009536743 0.7059999704360962 0.5490000247955322 1.0</diffuse>
+        <specular>0.0 0.0 0.0 1.0</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <cast_shadows>True</cast_shadows>
+    </visual>
+    <self_collide>True</self_collide>
+  </link>
+  
+</model>
+
+  </world>
+</sdf>

@@ -1,0 +1,276 @@
+{
+    "base_limits": {
+        "0": [
+            0,
+            3
+        ],
+        "1": [
+            -4,
+            8
+        ],
+        "17": [
+            -0.5,
+            3
+        ]
+    },
+    "system": "Linux",
+    "host": "Ubuntu22",
+    "camera_zoomins": [],
+    "camera_poses": {
+        "front": [
+            [
+                6.84,
+                2.9,
+                1.3
+            ],
+            [
+                0.5,
+                0.5,
+                -0.5,
+                -0.5
+            ]
+        ],
+        "top": [
+            [
+                2,
+                4,
+                3
+            ],
+            [
+                0,
+                4,
+                1
+            ]
+        ],
+        "zoomin1": [
+            "minifridge",
+            [
+                2,
+                0,
+                2
+            ]
+        ]
+    },
+    "supporting_surfaces": {
+        "sink#1::sink_bottom": [],
+        "sink_counter_left": [],
+        "sink_counter_right": [
+            "veggiecabbage"
+        ],
+        "wall": [],
+        "counter#1": [
+            "microwave#1",
+            "veggieartichoke",
+            "bottle#1"
+        ],
+        "counter#2": [],
+        "shelf_lower": [
+            "medicine#1",
+            "medicine#2"
+        ],
+        "braiserbody#1::braiser_bottom": []
+    },
+    "supported_movables": {
+        "veggiecabbage": "sink_counter_right",
+        "braiserlid": "braiserbody#1"
+    },
+    "attachments": {
+        "29": [
+            21,
+            -1,
+            [
+                [
+                    0.013258278369903564,
+                    0.2155170440673828,
+                    0.19241547584533691
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    6.123234262925839e-17
+                ]
+            ]
+        ],
+        "30": [
+            16,
+            -1,
+            [
+                [
+                    -0.1882477104663849,
+                    -0.04194211959838867,
+                    0.6326469779014587
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        ],
+        "31": [
+            30,
+            -1,
+            [
+                [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.3826834559440613,
+                    0.9238795638084412
+                ]
+            ]
+        ],
+        "32": [
+            21,
+            -1,
+            [
+                [
+                    0.1997426152229309,
+                    0.6316046714782715,
+                    0.07716655731201172
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9927813410758972,
+                    0.1199384480714798
+                ]
+            ]
+        ],
+        "34": [
+            6,
+            -1,
+            [
+                [
+                    0.2015693187713623,
+                    0.06461948156356812,
+                    0.06945240497589111
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.533806324005127,
+                    0.845606803894043
+                ]
+            ]
+        ],
+        "35": [
+            21,
+            -1,
+            [
+                [
+                    0.24796783924102783,
+                    -0.279010534286499,
+                    0.13053131103515625
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.6787382960319519,
+                    0.7343802452087402
+                ]
+            ]
+        ],
+        "36": [
+            28,
+            -1,
+            [
+                [
+                    0.20961815118789673,
+                    0.0,
+                    0.07156515121459961
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.7952259182929993,
+                    0.6063132286071777
+                ]
+            ]
+        ],
+        "37": [
+            29,
+            -1,
+            [
+                [
+                    -0.10408806800842285,
+                    0.18140244483947754,
+                    0.2355586290359497
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9959732890129089,
+                    -0.0896504670381546
+                ]
+            ]
+        ]
+    },
+    "body_to_name": {
+        "(10, 1)": "minifridge::joint_0",
+        "(10, 3)": "minifridge::joint_1",
+        "(10, None, 0)": "minifridge::link_2",
+        "(26, 10)": "cabinettop::chewie_door_left_joint",
+        "(26, 2)": "cabinettop::baker_joint",
+        "(26, 6)": "cabinettop::chewie_door_right_joint",
+        "(26, None, 0)": "cabinettop::sektion",
+        "(3, None, 2)": "sink#1::sink_bottom",
+        "(30, None, 1)": "braiserbody#1::braiser_bottom",
+        "0": "pr2robot",
+        "1": "floor#1",
+        "10": "minifridge",
+        "11": "minifridgebase",
+        "12": "cabinettall#1",
+        "13": "cabinetlower",
+        "14": "cabinetlower#1",
+        "15": "dishwasherbox",
+        "16": "ovencounter",
+        "17": "cabinetlower#2",
+        "18": "cabinetlower#3",
+        "19": "cabinetlower#4",
+        "2": "sinkbase",
+        "20": "wall",
+        "21": "counter#1",
+        "22": "counter#2",
+        "23": "counter_back#1",
+        "24": "counter_back#2",
+        "25": "counter_back#3",
+        "26": "cabinettop",
+        "27": "cabinettop_filler",
+        "28": "shelf_lower",
+        "29": "microwave#1",
+        "3": "sink#1",
+        "30": "braiserbody#1",
+        "31": "braiserlid",
+        "32": "veggieartichoke",
+        "34": "veggiecabbage",
+        "35": "bottle#1",
+        "36": "medicine#1",
+        "37": "medicine#2",
+        "4": "faucet",
+        "5": "sink_counter_left",
+        "6": "sink_counter_right",
+        "7": "sink_counter_front",
+        "8": "sink_counter_back",
+        "9": "cabinettall"
+    },
+    "obs_camera_pose": [
+        [
+            4.000000357627869,
+            4.0,
+            2.9999998211860657
+        ],
+        [
+            0.3162277978239245,
+            0.3162277978239245,
+            0.6324555249654344,
+            0.6324555249654344
+        ]
+    ]
+}

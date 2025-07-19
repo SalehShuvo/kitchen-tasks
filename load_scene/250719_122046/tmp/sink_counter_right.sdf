@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- tmp sdf file generated from LISDF -->
+<sdf version="1.9">
+  <world name="tmp_world">
+
+<model name="sink_counter_right">
+  <static>True</static>
+  <pose>0.4350000023841858 3.930000066757202 1.024999976158142 0.0 -0.0 0.0</pose>
+  <link name="box">
+    
+    <inertial>
+      <mass>0</mass>
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <inertia>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+      </inertia>
+    </inertial>
+    <collision name="box_collision">>
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <geometry>
+        <box>
+          <size>0.8069999814033508 0.39399999380111694 0.05000000074505806</size>
+        </box>
+      </geometry>
+      
+    </collision>
+    <visual name="box_visual">
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <geometry>
+        <box>
+          <size>0.8069999814033508 0.39399999380111694 0.05000000074505806</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>0.4000000059604645 0.4000000059604645 0.4000000059604645 1.0</diffuse>
+        <specular>0.0 0.0 0.0 1.0</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <cast_shadows>True</cast_shadows>
+    </visual>
+    <self_collide>True</self_collide>
+  </link>
+  
+</model>
+
+  </world>
+</sdf>

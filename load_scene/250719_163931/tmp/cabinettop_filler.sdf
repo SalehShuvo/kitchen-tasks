@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- tmp sdf file generated from LISDF -->
+<sdf version="1.9">
+  <world name="tmp_world">
+
+<model name="cabinettop_filler">
+  <static>True</static>
+  <pose>0.09099999815225601 3.9089999198913574 2.632999897003174 0.0 -0.0 0.0</pose>
+  <link name="box">
+    
+    <inertial>
+      <mass>0</mass>
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <inertia>
+        <ixx>0</ixx>
+        <ixy>0</ixy>
+        <ixz>0</ixz>
+        <iyy>0</iyy>
+        <iyz>0</iyz>
+        <izz>0</izz>
+      </inertia>
+    </inertial>
+    <collision name="box_collision">>
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <geometry>
+        <box>
+          <size>0.7639999985694885 1.1430000066757202 0.7649999856948853</size>
+        </box>
+      </geometry>
+      
+    </collision>
+    <visual name="box_visual">
+      <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
+      <geometry>
+        <box>
+          <size>0.7639999985694885 1.1430000066757202 0.7649999856948853</size>
+        </box>
+      </geometry>
+      <material>
+        <ambient>1.0 1.0 1.0 1.0</ambient>
+        <diffuse>0.8500000238418579 0.8500000238418579 0.8500000238418579 1.0</diffuse>
+        <specular>0.0 0.0 0.0 1.0</specular>
+        <emissive>0.0 0.0 0.0 1.0</emissive>
+      </material>
+      <cast_shadows>True</cast_shadows>
+    </visual>
+    <self_collide>True</self_collide>
+  </link>
+  
+</model>
+
+  </world>
+</sdf>

@@ -1,0 +1,537 @@
+<?xml version="1.0" ?>
+<!-- sdf file created by Yang's kitchen scene generator -->
+<sdf version="1.9">
+  <world name="None_250713_185845_1">
+
+    <gui>
+      <camera name="default_camera" definition_type="lookat">
+        <xyz>4.0 4.0 3.0</xyz>
+        <point_to>0.0 4.0 0.0</point_to>
+      </camera>
+    </gui>
+
+
+    <include name="pr2robot">
+      <uri>../../pybullet_planning/models/drake/pr2_description/urdf/pr2_simplified.urdf</uri>
+      <pose>1.615 0.425 0.051 0.0 -0.0 1.102</pose>
+    </include>
+
+
+    <model name="floor#1">
+      <static>true</static>
+      <pose>1.5 2.0 -0.002 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>3.0 12.0 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>3.0 12.0 0.001</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.824 0.706 0.549 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <include name="sinkbase">
+      <uri>../../assets/models/SinkBase/45305/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.7912844755886849</scale>
+      <pose>0.378 0.129 0.455 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="sink#1">
+      <uri>../../assets/models/Sink/00005/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.005</scale>
+      <pose>0.571 0.128 1.041 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="faucet">
+      <uri>../../assets/models/Faucet/148/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.15</scale>
+      <pose>0.405 0.129 1.129 0.0 -0.0 3.142</pose>
+    </include>
+
+    <model name="sink_counter_left">
+      <static>true</static>
+      <pose>0.397 -0.244 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.756 0.276 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.756 0.276 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="sink_counter_right">
+      <static>true</static>
+      <pose>0.397 0.513 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.756 0.301 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.756 0.301 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="sink_counter_front">
+      <static>true</static>
+      <pose>0.74 0.129 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.07 0.468 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.07 0.468 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="sink_counter_back">
+      <static>true</static>
+      <pose>0.228 0.129 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.418 0.468 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.418 0.468 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <include name="cabinettall">
+      <uri>../../assets/models/CabinetTall/45594/mobility.urdf</uri>
+      <static>true</static>
+      <scale>1.1263258992225766</scale>
+      <pose>0.369 1.081 0.972 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="minifridge">
+      <uri>../../assets/models/MiniFridge/11178/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.8</scale>
+      <pose>0.561 1.928 1.105 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="minifridgebase">
+      <uri>../../assets/models/MiniFridgeBase/45166/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.4966628078898656</scale>
+      <pose>0.505 1.93 0.213 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="cabinettall#1">
+      <uri>../../assets/models/CabinetTall/46236/mobility.urdf</uri>
+      <static>true</static>
+      <scale>1.039033364067227</scale>
+      <pose>0.439 2.665 0.99 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="cabinetlower">
+      <uri>../../assets/models/CabinetLower/35059/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.6536874862287113</scale>
+      <pose>0.377 3.222 0.472 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="cabinetlower#1">
+      <uri>../../assets/models/CabinetLower/35059/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.6536874862287113</scale>
+      <pose>0.377 3.819 0.472 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="dishwasherbox">
+      <uri>../../assets/models/DishwasherBox/11622/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.6689473201484586</scale>
+      <pose>0.366 4.519 0.48 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="ovencounter">
+      <uri>../../assets/models/OvenCounter/101808/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.6668580486411079</scale>
+      <pose>0.383 5.264 0.541 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="cabinetlower#2">
+      <uri>../../assets/models/CabinetLower/45213/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.6925682644178336</scale>
+      <pose>0.349 5.965 0.545 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="cabinetlower#3">
+      <uri>../../assets/models/CabinetLower/41004/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.6529563369284499</scale>
+      <pose>0.344 6.464 0.539 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="cabinetlower#4">
+      <uri>../../assets/models/CabinetLower/41004/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.6529563369284499</scale>
+      <pose>0.344 6.817 0.539 0.0 -0.0 3.142</pose>
+    </include>
+
+    <model name="wall">
+      <static>true</static>
+      <pose>-0.082 3.286 1.509 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.1 7.335 3.018</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.1 7.335 3.018</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="counter#1">
+      <static>true</static>
+      <pose>0.397 3.947 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.756 1.973 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.756 1.973 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="counter#2">
+      <static>true</static>
+      <pose>0.397 6.321 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.756 1.266 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.756 1.266 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="counter_back#1">
+      <static>true</static>
+      <pose>-0.006 0.141 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.051 1.045 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.051 1.045 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="counter_back#2">
+      <static>true</static>
+      <pose>-0.006 3.947 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.051 1.973 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.051 1.973 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="counter_back#3">
+      <static>true</static>
+      <pose>-0.006 6.321 1.025 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.051 1.266 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.051 1.266 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <include name="cabinettop">
+      <uri>../../assets/models/CabinetTop/00003/mobility.urdf</uri>
+      <static>true</static>
+      <scale>1.0</scale>
+      <pose>0.686 0.764 2.253 0.0 -0.0 3.142</pose>
+    </include>
+
+    <model name="cabinettop_filler">
+      <static>true</static>
+      <pose>0.304 0.193 2.633 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.672 1.143 0.765</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.672 1.143 0.765</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="shelf_lower">
+      <static>true</static>
+      <pose>0.372 3.947 2.275 0.0 -0.0 0.0</pose>
+      <link name="box">
+        <collision name="box_collision">
+          <geometry>
+            <box>
+              <size>0.807 1.973 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box_visual">
+          <geometry>
+            <box>
+              <size>0.807 1.973 0.05</size>
+            </box>
+          </geometry>
+          <material>
+            <diffuse>0.85 0.85 0.85 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <include name="microwave#1">
+      <uri>../../assets/models/Microwave/7128/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.4416086245754681</scale>
+      <pose>0.41 4.163 1.218 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="braiserbody#1">
+      <uri>../../assets/models/BraiserBody/100023/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.259</scale>
+      <pose>0.571 5.306 1.174 0.0 -0.0 3.142</pose>
+    </include>
+
+    <include name="braiserlid">
+      <uri>../../assets/models/BraiserLid/100023/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.259</scale>
+      <pose>0.571 5.306 1.174 0.0 -0.0 -2.356</pose>
+    </include>
+
+    <include name="veggieartichoke">
+      <uri>../../assets/models/Food/VeggieArtichoke/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.014</scale>
+      <pose>0.597 4.579 1.102 0.0 -0.0 2.901</pose>
+    </include>
+
+    <include name="veggiecabbage">
+      <uri>../../assets/models/Food/VeggieCabbage/mobility.urdf</uri>
+      <static>false</static>
+      <scale>0.0043</scale>
+      <pose>0.599 0.578 1.095 0.0 -0.0 1.126</pose>
+    </include>
+
+    <include name="bottle#1">
+      <uri>../../assets/models/Bottle/3614/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.16</scale>
+      <pose>0.645 3.668 1.156 0.0 -0.0 1.492</pose>
+    </include>
+
+    <include name="medicine#1">
+      <uri>../../assets/models/Medicine/4084/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.05</scale>
+      <pose>0.581 3.947 2.347 0.0 -0.0 1.839</pose>
+    </include>
+
+    <include name="medicine#2">
+      <uri>../../assets/models/Medicine/5861/mobility.urdf</uri>
+      <static>true</static>
+      <scale>0.05</scale>
+      <pose>0.515 3.981 1.453 0.0 -0.0 0.18</pose>
+    </include>
+
+
+    <state world_name="None_250713_185845_1">
+      <model name="pr2robot">
+        <joint name="x"><angle>1.615</angle></joint>
+        <joint name="y"><angle>0.425</angle></joint>
+        <joint name="theta"><angle>1.102</angle></joint>
+        <joint name="torso_lift_joint"><angle>0.678</angle></joint>
+        <joint name="head_pan_joint"><angle>0.0</angle></joint>
+        <joint name="head_tilt_joint"><angle>0.0</angle></joint>
+        <joint name="l_shoulder_pan_joint"><angle>1.321</angle></joint>
+        <joint name="l_shoulder_lift_joint"><angle>0.637</angle></joint>
+        <joint name="l_upper_arm_roll_joint"><angle>-0.344</angle></joint>
+        <joint name="l_elbow_flex_joint"><angle>-1.059</angle></joint>
+        <joint name="l_forearm_roll_joint"><angle>-2.846</angle></joint>
+        <joint name="l_wrist_flex_joint"><angle>-1.948</angle></joint>
+        <joint name="l_wrist_roll_joint"><angle>-2.8</angle></joint>
+        <joint name="r_shoulder_pan_joint"><angle>-2.135</angle></joint>
+        <joint name="r_shoulder_lift_joint"><angle>1.296</angle></joint>
+        <joint name="r_upper_arm_roll_joint"><angle>-3.75</angle></joint>
+        <joint name="r_elbow_flex_joint"><angle>-0.15</angle></joint>
+        <joint name="r_forearm_roll_joint"><angle>-10000.0</angle></joint>
+        <joint name="r_wrist_flex_joint"><angle>-0.1</angle></joint>
+        <joint name="r_wrist_roll_joint"><angle>-10000.0</angle></joint>
+        <joint name="l_gripper_l_finger_joint"><angle>0.548</angle></joint>
+        <joint name="l_gripper_r_finger_joint"><angle>0.548</angle></joint>
+        <joint name="l_gripper_l_finger_tip_joint"><angle>0.548</angle></joint>
+        <joint name="l_gripper_r_finger_tip_joint"><angle>0.548</angle></joint>
+        <joint name="r_gripper_l_finger_joint"><angle>0.0</angle></joint>
+        <joint name="r_gripper_r_finger_joint"><angle>0.0</angle></joint>
+        <joint name="r_gripper_l_finger_tip_joint"><angle>0.0</angle></joint>
+        <joint name="r_gripper_r_finger_tip_joint"><angle>0.0</angle></joint>
+      </model>
+      <model name="minifridge">
+        <joint name="joint_0"><angle>4.712</angle></joint>
+        <joint name="joint_1"><angle>4.712</angle></joint>
+      </model>
+      <model name="cabinettop">
+        <joint name="chewie_door_right_joint"><angle>0.936</angle></joint>
+        <joint name="chewie_door_left_joint"><angle>-1.373</angle></joint>
+        <joint name="baker_joint"><angle>1.341</angle></joint>
+      </model>
+    </state>
+
+  </world>
+</sdf>
